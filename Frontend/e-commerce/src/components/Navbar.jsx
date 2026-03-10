@@ -15,7 +15,7 @@ function Navbar() {
         try {
 
             const res = await axios.get(
-                "http://localhost:5000/api/products-search",
+                "https://deepcut-e-commerce-website.onrender.com/api/products-search",
                 {
                     params: { productName }
                 }
