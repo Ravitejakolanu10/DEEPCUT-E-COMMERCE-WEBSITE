@@ -62,7 +62,8 @@ function Login() {
                 <button type="submit">Login</button>
 
                 <p className="signup-text">
-                    New customer? <a href="/register">Create account</a>
+                </p>
+                    New customer? <Link to="/register">Create account</Link>
                 </p>
 
             </form>
