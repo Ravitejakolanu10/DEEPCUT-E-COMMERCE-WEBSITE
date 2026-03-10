@@ -17,7 +17,7 @@ const fetchUser = async ()=>{
 try{
 
 const res = await axios.get(
-`http://localhost:5000/api/user/${userId}`
+`https://deepcut-e-commerce-website.onrender.com/api/user/${userId}`
 );
 
 setUser(res.data);
@@ -37,7 +37,7 @@ const updateProfile = async ()=>{
 try{
 
 await axios.put(
-"http://localhost:5000/api/update-profile",
+"https://deepcut-e-commerce-website.onrender.com/api/update-profile",
 user
 );
 
