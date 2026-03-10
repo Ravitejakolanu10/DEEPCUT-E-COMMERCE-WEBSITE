@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 import "./Login.css";
 
@@ -62,7 +62,7 @@ function Login() {
                 <button type="submit">Login</button>
 
                 <p className="signup-text">
-                </p>
+             
                     New customer? <Link to="/register">Create account</Link>
                 </p>
 
