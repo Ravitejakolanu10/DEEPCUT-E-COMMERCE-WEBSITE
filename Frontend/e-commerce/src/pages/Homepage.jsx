@@ -16,7 +16,7 @@ function Homepage() {
         const fetchProducts = async () => {
 
             const res = await axios.get(
-                "http://localhost:5000/api/products"
+                "https://deepcut-e-commerce-website.onrender.com/api/products"
             );
 
             setProducts(res.data);
@@ -32,7 +32,7 @@ function Homepage() {
         try {
 
             await axios.post(
-                "http://localhost:5000/api/add-to-cart",
+                "https://deepcut-e-commerce-website.onrender.com/api/add-to-cart",
                 { userId, productId }
             );
 
