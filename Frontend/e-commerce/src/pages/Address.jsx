@@ -18,7 +18,7 @@ e.preventDefault();
 try{
 
 const res = await axios.post(
-"http://localhost:5000/api/place-order",
+"https://deepcut-e-commerce-website.onrender.com/api/place-order",
 {
 userId,
 address,
