@@ -81,8 +81,9 @@ function Homepage() {
                             <div className="product-image">
 
                                 <img
-                                    src={product.productImages?.[0]}
-                                    alt={product.productName}
+                                  src={product.productImages?.[0]}
+                                  alt={product.productName}
+                                  loading="lazy"
                                 />
 
                                 <span className="discount">
