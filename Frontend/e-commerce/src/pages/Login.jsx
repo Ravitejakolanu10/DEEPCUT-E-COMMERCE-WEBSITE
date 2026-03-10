@@ -22,9 +22,7 @@ function Login() {
             if(res.data.user){
                 alert(res.data.message);
                 localStorage.setItem("userId", res.data.user._id);
-                navigate("/homepage" ,{
-                    state : {userId : res.data.user._id}
-                } );
+                navigate("/homepage");
             }
 
         } catch (error) {
