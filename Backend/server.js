@@ -105,14 +105,12 @@ app.post("/api/user-register", async (req, res) => {
 
 const upload = multer({ dest: "uploads/" });
 
-app.post("/api/add-product", upload.array("productImages", 5), async (req, res) => {
+app.post("/api/add-product",async (req, res) => {
     try {
-        const { productName, productDescription, productCategory, productPrice, productQuantity } = req.body;
-
-        const images = req.files.map(file => file.filename);
+        const { productName, productDescription, productCategory ,productPrice, productQuantity, productImages } = req.body;
 
         const newProduct = await Product.create({
-            productName, productDescription, productPrice, productImages: images, productCategory, productQuantity
+            productName, productDescription, productPrice, productImages, productCategory, productQuantity
         })
 
         res.json({
