@@ -24,7 +24,7 @@ const fetchCart = async () => {
 try {
 
 const res = await axios.get(
-`http://localhost:5000/api/userCart/${userId}`
+`https://deepcut-e-commerce-website.onrender.com/api/userCart/${userId}`
 );
 
 setMyCart(res.data);
@@ -42,7 +42,7 @@ const increaseQty = async (productId) => {
 try {
 
 await axios.put(
-"http://localhost:5000/api/cart/increase",
+"https://deepcut-e-commerce-website.onrender.com/api/cart/increase",
 {
 userId,
 productId
@@ -66,7 +66,7 @@ if(quantity <= 1) return;
 try {
 
 await axios.put(
-"http://localhost:5000/api/cart/decrease",
+"https://deepcut-e-commerce-website.onrender.com/api/cart/decrease",
 {
 userId,
 productId
@@ -88,7 +88,7 @@ const removeItem = async (productId) => {
 try {
 
 await axios.delete(
-"http://localhost:5000/api/cart/remove",
+"https://deepcut-e-commerce-website.onrender.com/api/cart/remove",
 {
 data:{ userId, productId }
 }
@@ -155,7 +155,7 @@ return(
 <div className="cart-card" key={product._id}>
 
 <img
-src={`http://localhost:5000/uploads/${product.productImages?.[0]}`}
+src={`https://deepcut-e-commerce-website.onrender.com/uploads/${product.productImages?.[0]}`}
 alt={product.productName}
 />
 
