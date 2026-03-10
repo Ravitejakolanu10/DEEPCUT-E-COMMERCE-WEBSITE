@@ -81,7 +81,7 @@ function Homepage() {
                             <div className="product-image">
 
                                 <img
-                                    src={`http://localhost:5000/uploads/${product.productImages?.[0]}`}
+                                    src={product.productImages?.[0]}
                                     alt={product.productName}
                                 />
 
