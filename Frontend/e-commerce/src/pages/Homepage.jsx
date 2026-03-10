@@ -9,7 +9,7 @@ function Homepage() {
 
     const location = useLocation();
 
-    const userId = location?.state?.userId;
+     const userId = localStorage.getItem("userId");
 
     useEffect(() => {
 
