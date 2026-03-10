@@ -155,7 +155,7 @@ return(
 <div className="cart-card" key={product._id}>
 
 <img
-src={`https://deepcut-e-commerce-website.onrender.com/uploads/${product.productImages?.[0]}`}
+src={product.productImages?.[0]}
 alt={product.productName}
 />
 
