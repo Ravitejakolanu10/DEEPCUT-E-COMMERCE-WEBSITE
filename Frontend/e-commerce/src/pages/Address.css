@@ -1,0 +1,111 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* page */
+
+.address-page{
+min-height:100vh;
+background:linear-gradient(135deg,#f5f7fa,#c3cfe2);
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+}
+
+/* card */
+
+.address-form{
+background:white;
+padding:35px;
+width:420px;
+border-radius:12px;
+box-shadow:0 10px 35px rgba(0,0,0,0.15);
+display:flex;
+flex-direction:column;
+gap:15px;
+transition:0.3s;
+}
+
+.address-form:hover{
+transform:translateY(-3px);
+}
+
+/* heading */
+
+.address-page h2{
+text-align:center;
+margin-bottom:20px;
+font-size:24px;
+color:#333;
+}
+
+/* labels */
+
+.address-form label{
+font-size:14px;
+font-weight:bold;
+color:#555;
+}
+
+/* inputs */
+
+.address-form input,
+.address-form textarea{
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:14px;
+outline:none;
+transition:0.2s;
+}
+
+/* textarea */
+
+.address-form textarea{
+resize:none;
+height:80px;
+}
+
+/* focus */
+
+.address-form input:focus,
+.address-form textarea:focus{
+border-color:#ff9900;
+box-shadow:0 0 5px rgba(255,153,0,0.4);
+}
+
+/* button */
+
+.address-form button{
+margin-top:10px;
+padding:14px;
+background:#ff9900;
+border:none;
+border-radius:8px;
+color:white;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.address-form button:hover{
+background:#e68900;
+transform:translateY(-2px);
+}
+
+/* responsive */
+
+@media(max-width:600px){
+
+.address-form{
+width:100%;
+padding:25px;
+}
+
+}

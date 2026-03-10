@@ -1,0 +1,96 @@
+/* APP WRAPPER */
+
+.app{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+/* MAIN CONTENT */
+
+.main-content{
+flex:1;
+padding:30px 60px;
+}
+
+/* PAGE TITLES */
+
+.page-title{
+font-size:28px;
+font-weight:600;
+margin-bottom:25px;
+color:#222;
+}
+
+/* CARD STYLE */
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* GRID SYSTEM */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+/* FLEX UTILITIES */
+
+.flex{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+/* CENTER CONTENT */
+
+.center{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* BUTTON PRIMARY */
+
+.btn-primary{
+background:#ff9900;
+color:white;
+border:none;
+padding:12px 18px;
+border-radius:6px;
+font-weight:500;
+transition:0.3s;
+}
+
+.btn-primary:hover{
+background:#e68900;
+}
+
+/* BUTTON SECONDARY */
+
+.btn-secondary{
+background:#eee;
+color:#333;
+border:none;
+padding:10px 16px;
+border-radius:6px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.main-content{
+padding:20px;
+}
+
+.page-title{
+font-size:24px;
+}
+
+}

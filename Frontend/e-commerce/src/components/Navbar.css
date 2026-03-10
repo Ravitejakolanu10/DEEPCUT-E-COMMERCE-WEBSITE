@@ -1,0 +1,173 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Poppins", Arial, Helvetica, sans-serif;
+}
+
+/* navbar */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#131921;
+padding:12px 60px;
+color:white;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* logo */
+
+.logo a{
+font-size:24px;
+font-weight:700;
+letter-spacing:2px;
+color:#ff9900;
+text-decoration:none;
+transition:0.3s;
+}
+
+.logo a:hover{
+color:#ffb84d;
+}
+
+/* search */
+
+.search-bar{
+display:flex;
+align-items:center;
+width:40%;
+background:white;
+border-radius:6px;
+overflow:hidden;
+}
+
+.search-bar input{
+flex:1;
+padding:10px 12px;
+border:none;
+outline:none;
+font-size:14px;
+}
+
+.search-bar button{
+padding:10px 18px;
+border:none;
+background:#febd69;
+cursor:pointer;
+font-weight:bold;
+transition:0.3s;
+}
+
+.search-bar button:hover{
+background:#f3a847;
+}
+
+/* nav links */
+
+.nav-links{
+display:flex;
+gap:25px;
+align-items:center;
+}
+
+/* links */
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-size:14px;
+font-weight:500;
+position:relative;
+transition:0.3s;
+}
+
+/* underline animation */
+
+.nav-links a::after{
+content:"";
+position:absolute;
+width:0;
+height:2px;
+background:#ff9900;
+left:0;
+bottom:-5px;
+transition:0.3s;
+}
+
+.nav-links a:hover::after{
+width:100%;
+}
+
+/* cart badge (optional) */
+
+.cart{
+position:relative;
+}
+
+.cart-count{
+position:absolute;
+top:-6px;
+right:-10px;
+background:#ff9900;
+color:white;
+font-size:11px;
+padding:2px 6px;
+border-radius:50%;
+}
+
+/* logout button */
+
+.logout{
+background:#ff4d4d;
+border:none;
+padding:8px 14px;
+color:white;
+cursor:pointer;
+border-radius:6px;
+font-size:13px;
+transition:0.3s;
+}
+
+.logout:hover{
+background:#d93636;
+transform:translateY(-2px);
+}
+
+/* responsive */
+
+@media(max-width:900px){
+
+.navbar{
+padding:10px 20px;
+}
+
+.search-bar{
+width:50%;
+}
+
+.nav-links{
+gap:15px;
+}
+
+}
+
+@media(max-width:600px){
+
+.search-bar{
+display:none;
+}
+
+.nav-links{
+gap:10px;
+}
+
+.logo a{
+font-size:20px;
+}
+
+}

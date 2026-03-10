@@ -1,0 +1,135 @@
+/* reset */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Poppins", Arial, Helvetica, sans-serif;
+}
+
+/* page background */
+
+.login-page{
+min-height:100vh;
+background:linear-gradient(135deg,#f6f9fc,#e9eff5);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* container */
+
+.login-container{
+display:flex;
+justify-content:center;
+align-items:center;
+width:100%;
+}
+
+/* login card */
+
+.login-card{
+background:white;
+padding:40px 35px;
+width:380px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.login-card:hover{
+transform:translateY(-3px);
+box-shadow:0 14px 35px rgba(0,0,0,0.12);
+}
+
+/* heading */
+
+.login-card h2{
+text-align:center;
+margin-bottom:25px;
+font-size:24px;
+font-weight:600;
+color:#222;
+}
+
+/* labels */
+
+.login-card label{
+display:block;
+font-size:14px;
+font-weight:600;
+margin-top:12px;
+color:#444;
+}
+
+/* inputs */
+
+.login-card input{
+width:100%;
+padding:12px;
+margin-top:6px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:6px;
+font-size:14px;
+transition:0.2s;
+}
+
+/* focus effect */
+
+.login-card input:focus{
+border-color:#ff9900;
+box-shadow:0 0 0 2px rgba(255,153,0,0.15);
+}
+
+/* button */
+
+.login-card button{
+width:100%;
+padding:13px;
+background:#ff9900;
+border:none;
+color:white;
+font-size:16px;
+font-weight:600;
+border-radius:6px;
+cursor:pointer;
+transition:0.25s;
+}
+
+/* button hover */
+
+.login-card button:hover{
+background:#e68900;
+transform:translateY(-1px);
+}
+
+/* signup text */
+
+.signup-text{
+margin-top:18px;
+text-align:center;
+font-size:14px;
+color:#555;
+}
+
+.signup-text a{
+color:#2874f0;
+text-decoration:none;
+font-weight:600;
+}
+
+.signup-text a:hover{
+text-decoration:underline;
+}
+
+/* responsive */
+
+@media(max-width:500px){
+
+.login-card{
+width:90%;
+padding:30px;
+}
+
+}
