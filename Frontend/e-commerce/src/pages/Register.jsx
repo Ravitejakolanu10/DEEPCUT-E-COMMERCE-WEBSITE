@@ -23,7 +23,7 @@ function Register() {
         }
 
         const res = await axios.post(
-            "http://localhost:5000/api/user-register",
+            "https://deepcut-e-commerce-website.onrender.com/api/user-register",
             { userName, userEmail, userPhone, userPassword }
         );
 
