@@ -28,7 +28,7 @@ function Products() {
                 formData.append("productImages", productImages[i]);
             }
 
-            const res = await axios.post("http://localhost:5000/api/add-product",formData)
+            const res = await axios.post("https://deepcut-e-commerce-website.onrender.com/api/add-product",formData)
             
             alert(res.data.message);
 
